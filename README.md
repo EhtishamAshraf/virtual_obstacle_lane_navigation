@@ -7,15 +7,15 @@ For more information on "lane tracking" and "how the robot pose data is generate
 
 ### Demo Video
 You can watch the demo video of Mapping by clicking on the below image
-[![Watch the video](https://github.com/EhtishamAshraf/virtual_obstacle_lane_navigation/blob/main/src/slam_lane_tracking_pkg/Image/video_image.png)](https://youtu.be/r8ivSmZ68Tw)
+[![Watch the video](https://github.com/EhtishamAshraf/virtual_obstacle_lane_navigation/blob/main/src/slam_lane_tracking_pkg/Image/video_image.png)](https://youtu.be/-JGLHBf8EOU)
 
 You can watch the demo video of Navigation by clicking on the below image
-[![Watch the video](https://github.com/EhtishamAshraf/virtual_obstacle_lane_navigation/blob/main/src/slam_lane_tracking_pkg/Image/video_image.png)]()
+[![Watch the video](https://github.com/EhtishamAshraf/virtual_obstacle_lane_navigation/blob/main/src/slam_lane_tracking_pkg/Image/video_image.png)](https://youtu.be/vERA8F4Mlvc)
 
 ## Gazebo World
 Below image shows the Gazebo world used in this project. The world contains white and yellow lines.
 
-![Gazebo World](https://github.com/EhtishamAshraf/virtual_obstacle_lane_navigation/blob/main/src/slam_lane_tracking_pkg/Image/simulation_environment.png)
+![Gazebo World](https://github.com/EhtishamAshraf/virtual_obstacle_lane_navigation/blob/main/src/slam_lane_tracking_pkg/Image/navigation.png)
 
 ### Note 
 1.  Details about cloning the repository are given at the end of this **readme file**
@@ -87,3 +87,7 @@ or
 ```bash
 roslaunch navigation.launch 
 ```
+
+## Limitations
+- **Narrow Lane Width:** The current implementation of navigation within the lane performs well for short distances and straight paths. However, during turns, the robot may struggle to maneuver effectively due to the limited width of the lane. This constraint can lead to difficulties in maintaining proper alignment and orientation, impacting the overall navigation performance.
+  
