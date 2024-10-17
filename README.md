@@ -21,7 +21,7 @@ Below image shows the Gazebo world used in this project. The world contains whit
 1.  Details about cloning the repository are given at the end of this **readme file**
 
 ## Lane Tracking Logic & Robot's Movement Control using PD Controller
-The logic behind lane tracking algorithm and Robot movement control is explained in detail in the following repo: [autonomous lane tracking.](https://github.com/EhtishamAshraf/virtual_obstacle_lane_navigation.git)
+The logic behind lane tracking algorithm and Robot movement control is explained in detail in the following repo: [autonomous lane tracking.](https://github.com/EhtishamAshraf/turtlebot3_lane_tracking.git)
 
 ![Cmera Output](https://github.com/EhtishamAshraf/virtual_obstacle_lane_navigation/blob/main/src/slam_lane_tracking_pkg/Image/camera_output.png)
 
