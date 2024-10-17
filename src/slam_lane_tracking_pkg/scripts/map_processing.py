@@ -1,3 +1,4 @@
+# This code is used to process the map and mark the lines as virtual obstacles
 from PIL import Image
 import numpy as np
 import math
