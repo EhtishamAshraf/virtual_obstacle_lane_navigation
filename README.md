@@ -2,7 +2,7 @@
 This repository features a custom ROS package, slam_lane_tracking_pkg, designed to enable Turtlebot3 to autonomously navigate an autorace environment by tracking lanes and simultaneously mapping the surroundings. The package equips Turtlebot3 with the ability to follow lanes using camera sensor data, utilizing the cv_bridge package to process images and detect yellow and white lines.
 
 Once the map is created, the robot’s pose data is used to designate the detected lanes as virtual obstacles, ensuring they are avoided during autonomous navigation. 
-For more information on "lane tracking" and "how the robot pose data is generated", please refer to the following repository: [autonomous lane tracking.](https://github.com/EhtishamAshraf/virtual_obstacle_lane_navigation.git)
+For more information on "lane tracking" and "how the robot pose data is generated", please refer to the following repository: [autonomous lane tracking.](https://github.com/EhtishamAshraf/turtlebot3_lane_tracking.git)
 
 
 ### Demo Video
