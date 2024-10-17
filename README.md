@@ -6,13 +6,16 @@ For more information on "lane tracking" and "how the robot pose data is generate
 
 
 ### Demo Video
-You can watch the demo video by clicking on the below image
-[![Watch the video]()](https://youtu.be/AojJgdawQTQ)
+You can watch the demo video of Mapping by clicking on the below image
+[![Watch the video](https://github.com/EhtishamAshraf/virtual_obstacle_lane_navigation/blob/main/src/slam_lane_tracking_pkg/Image/video_image.png)](https://youtu.be/r8ivSmZ68Tw)
+
+You can watch the demo video of Navigation by clicking on the below image
+[![Watch the video](https://github.com/EhtishamAshraf/virtual_obstacle_lane_navigation/blob/main/src/slam_lane_tracking_pkg/Image/video_image.png)]()
 
 ## Gazebo World
 Below image shows the Gazebo world used in this project. The world contains white and yellow lines.
 
-![Gazebo World](https://github.com/EhtishamAshraf/Ros_Lane_Tracking/blob/main/src/lane_tracking_pkg/Images/autorace_world.png)
+![Gazebo World](https://github.com/EhtishamAshraf/virtual_obstacle_lane_navigation/blob/main/src/slam_lane_tracking_pkg/Image/simulation_environment.png)
 
 ### Note 
 1.  Details about cloning the repository are given at the end of this **readme file**
@@ -20,24 +23,27 @@ Below image shows the Gazebo world used in this project. The world contains whit
 ## Lane Tracking Logic & Robot's Movement Control using PD Controller
 The logic behind lane tracking algorithm and Robot movement control is explained in detail in the following repo: [autonomous lane tracking.](https://github.com/EhtishamAshraf/virtual_obstacle_lane_navigation.git)
 
-![Cmera Output](https://github.com/EhtishamAshraf/Ros_Lane_Tracking/blob/main/src/lane_tracking_pkg/Images/camera_output.png)
+![Cmera Output](https://github.com/EhtishamAshraf/virtual_obstacle_lane_navigation/blob/main/src/slam_lane_tracking_pkg/Image/camera_output.png)
 
 ## Robot's Pose data
 While the robot is tracking a lane, its position and orientation data are continuously recorded in a .txt file. This stored data is later utilized to mark the lanes as virtual obstacles for Autonomous Navigation. The Robot pose data is stored and saved in the previous repo.
 
 ## Running the Simulation
 To run the simulation, launch the slam_lane_tracking launch file, In order to launch the launch file (you should first navigate inside the workspace and then, use the following command).
+
 ### 1. Mapping
 ```bash
 roslaunch slam_lane_tracking_pkg slam_lane_tracking.launch
 ```
+![Gazebo World](https://github.com/EhtishamAshraf/virtual_obstacle_lane_navigation/blob/main/src/slam_lane_tracking_pkg/Image/rviz_output.png)
+
 ### 1. Navigation
 ```bash
 roslaunch slam_lane_tracking_pkg navigation.launch
 ```
 
 ### Note: 
-I have used cv_bridge, turtlebot3_gazebo, gazebo_ros packages, so plesae download all necessary packages before cloning the repository.
+I have used cv_bridge, turtlebot3_gazebo, gazebo_ros, gmapping, move_base packages, so plesae download all necessary packages before cloning the repository.
 
 # Clone the repository
 ```bash
