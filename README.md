@@ -31,7 +31,8 @@ While the robot is tracking a lane, its position and orientation data are contin
 ## Map Processing
 The map created with the Gmapping node doesn't mark lines as obstacles so during the pre-processing the lane is marked as virtual obstacle with the help of the code "map_processing.py"
 The original map:
-![Original Map](https://github.com/EhtishamAshraf/virtual_obstacle_lane_navigation/blob/main/src/slam_lane_tracking_pkg/maps/my_map.pgm)
+![Original Map](https://raw.githubusercontent.com/EhtishamAshraf/virtual_obstacle_lane_navigation/main/src/slam_lane_tracking_pkg/maps/my_map.pgm)
+
 
 
 ## Running the Simulation
