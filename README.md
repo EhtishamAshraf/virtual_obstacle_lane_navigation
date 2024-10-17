@@ -10,12 +10,12 @@ You can watch the demo video of Mapping by clicking on the below image
 [![Watch the video](https://github.com/EhtishamAshraf/virtual_obstacle_lane_navigation/blob/main/src/slam_lane_tracking_pkg/Image/video_image.png)](https://youtu.be/-JGLHBf8EOU)
 
 You can watch the demo video of Navigation by clicking on the below image
-[![Watch the video](https://github.com/EhtishamAshraf/virtual_obstacle_lane_navigation/blob/main/src/slam_lane_tracking_pkg/Image/video_image.png)](https://youtu.be/vERA8F4Mlvc)
+[![Watch the video](https://github.com/EhtishamAshraf/virtual_obstacle_lane_navigation/blob/main/src/slam_lane_tracking_pkg/Image/navigation.png)](https://youtu.be/vERA8F4Mlvc)
 
 ## Gazebo World
 Below image shows the Gazebo world used in this project. The world contains white and yellow lines.
 
-![Gazebo World](https://github.com/EhtishamAshraf/virtual_obstacle_lane_navigation/blob/main/src/slam_lane_tracking_pkg/Image/navigation.png)
+![Gazebo World](https://github.com/EhtishamAshraf/virtual_obstacle_lane_navigation/blob/main/src/slam_lane_tracking_pkg/Image/simulation_environment.png)
 
 ### Note 
 1.  Details about cloning the repository are given at the end of this **readme file**
@@ -23,10 +23,16 @@ Below image shows the Gazebo world used in this project. The world contains whit
 ## Lane Tracking Logic & Robot's Movement Control using PD Controller
 The logic behind lane tracking algorithm and Robot movement control is explained in detail in the following repo: [autonomous lane tracking.](https://github.com/EhtishamAshraf/turtlebot3_lane_tracking.git)
 
-![Cmera Output](https://github.com/EhtishamAshraf/virtual_obstacle_lane_navigation/blob/main/src/slam_lane_tracking_pkg/Image/camera_output.png)
+![Camera Output](https://github.com/EhtishamAshraf/virtual_obstacle_lane_navigation/blob/main/src/slam_lane_tracking_pkg/Image/camera_output.png)
 
 ## Robot's Pose data
 While the robot is tracking a lane, its position and orientation data are continuously recorded in a .txt file. This stored data is later utilized to mark the lanes as virtual obstacles for Autonomous Navigation. The Robot pose data is stored and saved in the previous repo.
+
+## Map Processing
+The map created with the Gmapping node doesn't mark lines as obstacles so during the pre-processing the lane is marked as virtual obstacle with the help of the code "map_processing.py"
+The original map:
+![Original Map](https://github.com/EhtishamAshraf/virtual_obstacle_lane_navigation/blob/main/src/slam_lane_tracking_pkg/maps/my_map.pgm)
+
 
 ## Running the Simulation
 To run the simulation, there are two options:
