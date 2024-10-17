@@ -29,7 +29,10 @@ The logic behind lane tracking algorithm and Robot movement control is explained
 While the robot is tracking a lane, its position and orientation data are continuously recorded in a .txt file. This stored data is later utilized to mark the lanes as virtual obstacles for Autonomous Navigation. The Robot pose data is stored and saved in the previous repo.
 
 ## Running the Simulation
-To run the simulation, launch the slam_lane_tracking launch file, In order to launch the launch file (you should first navigate inside the workspace and then, use the following command).
+To run the simulation, there are two options:
+A. In order to do the mapping using SLAM, launch the slam_lane_tracking launch file.
+B. In order to do the navigation, launch the navigation launch file.
+Navigate inside the workspace and then, use either of the following command:
 
 ### 1. Mapping
 ```bash
@@ -37,7 +40,7 @@ roslaunch slam_lane_tracking_pkg slam_lane_tracking.launch
 ```
 ![Gazebo World](https://github.com/EhtishamAshraf/virtual_obstacle_lane_navigation/blob/main/src/slam_lane_tracking_pkg/Image/rviz_output.png)
 
-### 1. Navigation
+### 2. Navigation
 ```bash
 roslaunch slam_lane_tracking_pkg navigation.launch
 ```
